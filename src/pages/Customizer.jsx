@@ -1,5 +1,10 @@
 import React from 'react';
-import {downloadCanvasToImage} from "../config/helpers.js";
+import {downloadCanvasToImage, reader} from "../config/helpers.js";
+import {motion, AnimatePresence} from "framer-motion";
+import config from "../config/config.js";
+import state from "../store/index.js";
+import { download } from '../assets';
+import { EditorTabs, FilterTabs, DecalTypes} from "../config/constants.js";
 
 const Customizer = () => {
     return (

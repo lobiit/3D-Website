@@ -3,6 +3,7 @@ import {motion, AnimatePresence} from "framer-motion";
 import {useSnapshot} from "valtio";
 import {headContainerAnimation, headTextAnimation, headContentAnimation, slideAnimation} from "../config/motion.js";
 import state from "../store/index.js";
+import {CustomButton} from "../components/index.js";
 const Home = () => {
     const snap = useSnapshot(state);
     return (
@@ -22,7 +23,14 @@ const Home = () => {
                             <p className="max-w-md font-normal text-gray-600">
                                 Create your unique and exclusive cake with our brand-new 3D customization tool. <strong>unleash your imagination</strong> {" "} and define your own style.
                             </p>
+                            <CustomButton
+                                type={"filled"}
+                                title={"Customize It"}
+                                handleClick={() => state.intro=false}
+                                customStyles={"w-fit px-4 py-2.5 font-bold text-sm"}
+                            />
                         </motion.div>
+
                     </motion.div>
                 </motion.section>
             )}

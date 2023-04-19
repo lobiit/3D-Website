@@ -11,16 +11,18 @@ const config = new Configuration({
 });
 
 const openai = new OpenAIApi(config);
+
 router.route('/').get((req, res) => {
     res.status(200).json({ message: "Hello from DALL.E ROUTES"})
 })
 
 router.route('/').post(async (req, res)=>{
     try {
-        const {prompt} = req.body;
+        const { prompt } = req.body;
+
         const response = await openai.createImage({
             prompt,
-            h: 1,
+            n: 1,
             size: '1024x1024',
             response_format: 'b64_json'
         });

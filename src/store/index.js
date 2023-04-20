@@ -7,12 +7,12 @@ const state = proxy({
     isFullTexture: false,
     logoDecal: '/Roughness.png',
     fullDecal: '/Normal.png',
-    isOcclusion : false,
-    isMetalness : false,
-    isOcclusionRoughnessMetalness : false,
-    isAlbedo :  false,
-    isAlbedoOcclusion : false,
-    isGlossiness : false,
+    isOcclusion : '/Occlusion.png',
+    isMetalness : '/Metalness.png',
+    isOcclusionRoughnessMetalness : '/OcclusionRoughnessMetalness.png',
+    isAlbedo :  '/Albedo.png',
+    isAlbedoOcclusion : '/AlbedoOcclusion.png',
+    isGlossiness : 'Glossiness.png',
 });
 
 export default state;

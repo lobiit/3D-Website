@@ -36,7 +36,7 @@ const Cake = () => {
 
     return (
         <group key={stateString}>
-            <mesh castShadow geometry={nodes.Frosted_Cake.geometry} material={material} dispose={null} scale={2.0}
+            <mesh castShadow geometry={nodes.Frosted_Cake.geometry} material={material} dispose={null} scale={4.0}
                   ref={mesh}
                   onClick={(event) => setActive(!active)}
                   onPointerOver={(event) => setHover(true)}

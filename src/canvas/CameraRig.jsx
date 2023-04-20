@@ -19,8 +19,8 @@ const CameraRig = ({ children }) => {
             if(isBreakpoint) targetPosition = [0, 0, 2];
             if(isMobile) targetPosition = [0, 0.2, 2.5];
         } else {
-            if(isMobile) targetPosition = [0, 0, 2.5]
-            else targetPosition = [0, 0, 2];
+            if(isMobile) targetPosition = [0, 0.5, 3]
+            else targetPosition = [0, 0.3, 2.5];
         }
 
         // set model camera position
@@ -29,14 +29,17 @@ const CameraRig = ({ children }) => {
         // set the model rotation smoothly
         easing.dampE(
             group.current.rotation,
-            [state.pointer.y / 10, -state.pointer.x / 5, 0],
+            [state.pointer.y / 10 - Math.PI / 2, -state.pointer.x / 5 + Math.PI / 2, Math.PI / 2],
             0.25,
             delta
         )
+
+        // set the camera look at the center of the cake
+        state.camera.lookAt(0, 0.1, 0);
     })
 
 
     return <group ref={group}>{children}</group>
 }
 
-export default CameraRig
+export default CameraRig;

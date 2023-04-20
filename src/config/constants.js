@@ -16,10 +16,10 @@ export const EditorTabs = [
 ];
 
 export const FilterTabs = [
-  {
-    name: "stylishCake",
-    icon: stylistCake,
-  },
+  // {
+  //   name: "stylishCake",
+  //   icon: stylistCake,
+  // },
   {
     name: "Normal",
     icon: Normal,
@@ -62,5 +62,29 @@ export const DecalTypes = {
   full: {
     stateProperty: "fullDecal",
     filterTab: "Normal",
+  },
+  Albedo: {
+    stateProperty: "albedoDecal",
+    filterTab: "Albedo",
+  },
+  Occlusion: {
+    stateProperty: "occlusionDecal",
+    filterTab: "Occlusion",
+  },
+  Metalness: {
+    stateProperty: "metalnessDecal",
+    filterTab: "Metalness",
+  },
+  OcclusionRoughnessMetalness: {
+    stateProperty: "occlusionRoughnessMetalnessDecal",
+    filterTab: "OcclusionRoughnessMetalness",
+  },
+  AlbedoOcclusion: {
+    stateProperty: "albedoOcclusionDecal",
+    filterTab: "AlbedoOcclusion",
+  },
+  Glossiness: {
+    stateProperty: "glossinessDecal",
+    filterTab: "Glossiness",
   },
 };

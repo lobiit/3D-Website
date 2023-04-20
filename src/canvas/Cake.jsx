@@ -18,7 +18,7 @@ const Cake = () => {
     const  Albedo = useTexture(snap.albedoDecal);
     const  AlbedoOcclusion = useTexture(snap.albedoOcclusionDecal)
     const Glossiness = useTexture(snap.glossinessDecal);
-    console.log(snap);
+
     // Create a new material instance with the snap color
     const material = useMemo(() => new THREE.MeshBasicMaterial({ color: snap.color }), [snap.color]);
 

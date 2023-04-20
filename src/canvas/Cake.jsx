@@ -12,12 +12,12 @@ const Cake = () => {
     const { nodes } = useGLTF('/cake_baked.glb');
     const logoTexture = useTexture(snap.logoDecal);
     const fullTexture = useTexture(snap.fullDecal);
-    const   Occlusion =useTexture(snap.isOcclusion);
-    const  Metalness = useTexture(snap.isMetalness);
-    const  OcclusionRoughnessMetalness = useTexture(snap.isOcclusionRoughnessMetalness);
-    const  Albedo = useTexture(snap.isAlbedo);
-    const  AlbedoOcclusion = useTexture(snap.isAlbedoOcclusion)
-    const Glossiness = useTexture(snap.isGlossiness);
+    const   Occlusion =useTexture(snap.occlusionDecal);
+    const  Metalness = useTexture(snap.metalnessDecal);
+    const  OcclusionRoughnessMetalness = useTexture(snap.occlusionRoughnessMetalnessDecal);
+    const  Albedo = useTexture(snap.albedoDecal);
+    const  AlbedoOcclusion = useTexture(snap.albedoOcclusionDecal)
+    const Glossiness = useTexture(snap.glossinessDecal);
     console.log(snap);
     // Create a new material instance with the snap color
     const material = useMemo(() => new THREE.MeshBasicMaterial({ color: snap.color }), [snap.color]);

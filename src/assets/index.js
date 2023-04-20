@@ -13,5 +13,6 @@ import Metalness from './Metalness.png';
 import Normal from './Normal.png';
 import Occlusion from  './Occlusion.png';
 import OcclusionRoughnessMetalness from './OcclusionRoughnessMetalness.png';
-import Roughness from './Roughness.png'
-export { ai, fileIcon, swatch, download, logoShirt, stylishShirt, Metalness, Albedo, Normal, OcclusionRoughnessMetalness, AlbedoOcclusion, Glossiness, Occlusion, Roughness };
+import Roughness from './Roughness.png';
+import stylistCake from './cake.png';
+export { ai, fileIcon, swatch,stylistCake, download, logoShirt, stylishShirt, Metalness, Albedo, Normal, OcclusionRoughnessMetalness, AlbedoOcclusion, Glossiness, Occlusion, Roughness };

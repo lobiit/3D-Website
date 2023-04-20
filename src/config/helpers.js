@@ -5,6 +5,7 @@ export const downloadCanvasToImage = () => {
 
   link.href = dataURL;
   link.download = "canvas.png";
+
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

@@ -1,4 +1,4 @@
-import { swatch, fileIcon, ai, Normal, Roughness, Metalness, OcclusionRoughnessMetalness, Occlusion, Albedo, AlbedoOcclusion, Glossiness} from "../assets";
+import { swatch, fileIcon, ai, Normal, Roughness, stylistCake, Metalness, OcclusionRoughnessMetalness, Occlusion, Albedo, AlbedoOcclusion, Glossiness} from "../assets";
 
 export const EditorTabs = [
   {
@@ -16,6 +16,10 @@ export const EditorTabs = [
 ];
 
 export const FilterTabs = [
+  {
+    name: "stylishCake",
+    icon: stylistCake,
+  },
   {
     name: "Normal",
     icon: Normal,

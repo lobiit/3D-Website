@@ -26,4 +26,4 @@ const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
     )
 }
 
-export default Tab
+export default Tab;

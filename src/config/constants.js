@@ -1,4 +1,4 @@
-import { swatch, fileIcon, ai, logoShirt, stylishShirt } from "../assets";
+import { swatch, fileIcon, ai, Normal, Roughness, Metalness, OcclusionRoughnessMetalness, Occlusion, Albedo, AlbedoOcclusion, Glossiness} from "../assets";
 
 export const EditorTabs = [
   {
@@ -17,22 +17,46 @@ export const EditorTabs = [
 
 export const FilterTabs = [
   {
-    name: "logoShirt",
-    icon: logoShirt,
+    name: "Normal",
+    icon: Normal,
   },
   {
-    name: "stylishShirt",
-    icon: stylishShirt,
+    name: "Roughness",
+    icon: Roughness,
+  },
+  {
+    name: "Occlusion",
+    icon: Occlusion,
+  },
+  {
+    name: "Metalness",
+    icon: Metalness,
+  },
+  {
+    name: "OcclusionRoughnessMetalness",
+    icon: OcclusionRoughnessMetalness,
+  },
+  {
+    name: "Albedo",
+    icon: Albedo,
+  },
+  {
+    name: "AlbedoOcclusion",
+    icon: AlbedoOcclusion,
+  },
+  {
+    name: "Glossiness",
+    icon: Glossiness,
   },
 ];
 
 export const DecalTypes = {
   logo: {
     stateProperty: "logoDecal",
-    filterTab: "logoShirt",
+    filterTab: "roughness",
   },
   full: {
     stateProperty: "fullDecal",
-    filterTab: "stylishShirt",
+    filterTab: "Normal",
   },
 };

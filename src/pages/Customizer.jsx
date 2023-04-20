@@ -17,8 +17,15 @@ const Customizer = () => {
     const [generatingImg, setGeneratingImg] = useState(false);
     const [activeEditorTab, setActiveEditorTab] = useState("");
     const [activeFilterTab, setActiveFilterTab] = useState({
-        logoShirt: true,
-        stylishShirt: false,
+        roughness: true,
+        Normal: false,
+        Occlusion : false,
+        Metalness :  false,
+        OcclusionRoughnessMetalness: false,
+        Albedo : false,
+        AlbedoOcclusion : false,
+        Glossiness : false,
+
     });
     // show tab content depending on the activeTab
     const generateTabContent = () => {
@@ -80,11 +87,29 @@ const Customizer = () => {
 
     const handleActiveFilterTab = (tabName) => {
         switch (tabName) {
-            case "logoShirt":
+            case "roughness":
                 state.isLogoTexture = !activeFilterTab[tabName];
                 break;
-            case "stylishShirt":
+            case "Normal":
                 state.isFullTexture = !activeFilterTab[tabName];
+                break;
+            case "Occlusion":
+                state.isOcclusion = !activeFilterTab[tabName];
+                break;
+            case "Metalness":
+                state.isMetalness = !activeFilterTab[tabName];
+                break;
+            case "OcclusionRoughnessMetalness":
+                state.isOcclusionRoughnessMetalness = !activeFilterTab[tabName];
+                break;
+            case "Albedo":
+                state.isAlbedo = !activeFilterTab[tabName];
+                break;
+            case "AlbedoOcclusion":
+                state.isAlbedoOcclusion = !activeFilterTab[tabName];
+                break;
+            case "Glossiness":
+                state.isGlossiness = !activeFilterTab[tabName];
                 break;
             default:
                 state.isLogoTexture = true;
